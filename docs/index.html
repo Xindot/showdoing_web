@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <title>ShowDoing 数动云屏 连锁门店智慧商显系统</title>
+  <link rel="stylesheet" href="css/index.css?=2">
+</head>
+
+<body>
+  <div id="app">
+    <div class="bg"></div>
+    <div class="header">
+      <img src="./img/logo.jpeg" alt="">
+      <span class="logo-2"></span>
+    </div>
+    <div class="inside">
+      <p class="p-0">连锁门店智慧商显系统</p>
+      <p class="p-1">外卖接单、小程序点单、门店点单收款、数动云屏、杯扫叫号...</p>
+      <p class="p-1">为连锁品牌定制开发，私有化部署，成就您的自研</p>
+      <p class="p-2">
+        <button onclick="showModel()">技术支持</button>
+      </p>
+    </div>
+
+    <div id="model">
+      <div class="bg" onclick="hideModel()"></div>
+      <div class="center">
+        <img src="https://x-cdn.oss-accelerate.aliyuncs.com/img/nran_work/yinpos.com/img/wx-xx.png" alt="">
+      </div>
+    </div>
+
+    <div class="footer">
+      ShowDoing.com 2017-<span id="year"></span>
+      <a href="https://beian.miit.gov.cn/" target="_blank"></a>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear()
+
+    function showModel() {
+      document.getElementById('model').style.display = 'block'
+    }
+
+    function hideModel() {
+      document.getElementById('model').style.display = 'none'
+    }
+  </script>
+</body>
+
+</html>

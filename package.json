@@ -1,0 +1,12 @@
+{
+  "name": "yinpos-web",
+  "version": "1.0.0",
+  "description": "A Html Project",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "cd docs && anywhere -s -p 8081",
+    "gitPush": "git status && git add -A && git status && git commit -am 'gx' && git status && git push origin master && git status"
+  }
+}
